@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+    <link rel="icon" href="ico.ico">
+	<link rel="stylesheet" href="main.css" />
+</head>
+	
+	<body class="Mbody">
+		<div class="title fade-in"> <!-- Title -->
+			<h1 class="sM">Welcome</h1>
+			<h5 class="sM outline">To the home of</h5>
+			<h3 class="sM">Roland Thomenius-Stearns</h3>
+		</div>
+		
+		<div class="links center outline fade-in"> <!-- Links -->
+			<div class="topnav-centered">
+				<a href="./projects/index.html">Projects</a>
+			</div>
+			<a href="./about/index.html">About</a>
+			<div class="topnav-right">
+				<a href="./video/index.html">Videos</a>
+			</div>
+		</div>
+		
+		<div class="divIMG center fade-in">
+			<center>
+				<h3 class="outline">Here's what's going on:</h3>
+			</center>
+		</div>
+
+		<div class="img center fade-in fade-in"> <!-- Image -->
+			<div class="mySlides">
+				<img class="image fade-in" id="1" src="img1.jpg">
+				<div class="display-bottommiddle blackBack divIMG opacity">
+					<center>
+						<h2>Upcoming Half Life 1 mod</h2>
+					</center>
+				</div>
+			</div>
+
+			<div class="mySlides fade-in">
+				<img class="image fade-in" id="2" src="img2.png">
+				<div class="display-bottommiddle blackBack divIMG opacity">
+					<center>
+						<h2>Check out my fiverr gig at<br />
+							<a href="https://www.fiverr.com/share/zA6Pdo">https://www.fiverr.com/share/zA6Pdo</a>
+						</h2>
+					</center>
+				</div>
+			</div>
+
+				<button class="imgButton btLeft" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="imgButton btRight" onclick="plusDivs(1)">&#10095;</button>
+
+			</div>
+		<script src="imgBt.js"></script>
+		
+		
+		<div class="intText center fade-in"> <!-- Home into -->
+		
+				<p>Hello, welcome to my personal site. I will be using this to post<br>
+				   any projects or just anything I decide to put on here. I am not<br>
+				   one to update and keep any social media active so this website<br>
+				   is the next best thing. Anyhow, this is where Roland is Roland.<br>
+				   Please, check out my about page as well as my projects where I <br>
+				   will post Mods, Programs, all that fun stuff. For the third link,<br>
+				   it will be videos. Vlogs, skits, short films, or what ever Im feeling.</p>
+		</div>
+
+		<center class="outline fade-in">
+			<h1 class="sM">Contact Me Here</h1>
+			<h4 class="sM">if you want to say anything to me :)</h4>
+			<br>
+		</center>
+		
+		<div class="contact center fade-in"> <!-- contact form -->
+			<form class="gform pure-form pure-form-stacked " method="POST" data-email="example@email.net"
+			action="https://script.google.com/macros/s/AKfycbzfLczEVKJmeQMh4h5QzHBPzl65Mkg45NKhygde/exec">
+				<div class="form-elements">
+						<label class="outline" for="name">Name: </label>
+						<input id="name" class="blackText" name="name"/>
+						<br>
+						<label class="outline" for="email">Email:</label>
+						<input id="email" class="blackText" name="email" type="email" value=""
+						required placeholder="name@something.com"/>
+						<span class="email-invalid" style="display:none">
+						  Must be a valid email address</span>
+						<br>
+						<label for="message" class="outline">Message: </label>
+						<br>
+						<textarea id="message" class="blackText" name="message" rows="10" cols="50"
+						placeholder=""></textarea>
+						
+						
+					  <button style="color:black;">
+						Send</button>
+				</div>
+				<div style="display:none;" id="thankyou_message">
+					<h2>
+						<em>Thanks</em> for contacting us!
+						We will get back to you soon!
+					</h2>
+				</div> 
+			</form>
+			<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+		</div>
+		<center class="outline">
+			<h1>Or contact me at:</h1>
+			<h2>
+				General E-Mail: <a href="mailto: rolandthomenius@gmail.com">rolandthomenius@gmail.com</a>
+				<br>Business E-Mail: <a href="mailto: rolandthomenius@yahoo.com">rolandthomenius@yahoo.com</a>
+				<br>Phone: (505) 369-6081‬
+			</h2>
+		</center>
+	</body>	
+</html>
+
+<!--I have no idea what you are doing here in the DevTool part. Did you accidentally press F12 or
+	Ctrl(Cmd)+ shift + i? Or are you looking for secrets? If so I can assure you there is no 
+	secrets in here....
+	OR IS THERE??????????????-->
