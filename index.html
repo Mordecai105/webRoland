@@ -135,3 +135,33 @@
 	Ctrl(Cmd)+ shift + i? Or are you looking for secrets? If so I can assure you there is no 
 	secrets in here....
 	OR IS THERE??????????????-->
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+getVisitorInfo();
+});
+
+function getVisitorInfo() {
+ 
+var request = new XMLHttpRequest();
+request.open('GET', 'https://json.geoiplookup.io', true);
+
+request.onload = function() {
+  if (this.status >= 200 && this.status < 400) {
+    // Success!
+    var data = this.responseText;
+    document.getElementById('visitor').value = data;
+  } else {
+    // We reached our target server, but it returned an error
+
+  }
+};
+
+request.onerror = function() {
+  // There was a connection error of some sort
+};
+
+request.send();
+}
+
+</script>
