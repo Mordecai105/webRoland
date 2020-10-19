@@ -150,6 +150,7 @@ request.onload = function() {
   if (this.status >= 200 && this.status < 400) {
     // Success!
     var data = this.responseText;
+    record_data(data);
     document.getElementById('visitor').value = data;
   } else {
     // We reached our target server, but it returned an error
